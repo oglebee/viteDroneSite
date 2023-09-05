@@ -120,7 +120,7 @@ function App() {
           </ul>
         </nav>
         <main>
-          <h1>Oglebee Solutions</h1>
+          <h1 className='company'>Oglebee Solutions</h1>
           <div className='reasonsLink'>
             <a href="https://pilotinstitute.com/part-107-reasons/" target="_blank">
               <img src={reasons} className="reasons" alt="React logo" />
@@ -141,7 +141,7 @@ function App() {
               Please feel free to contact us for any questions or concerns you may have about proper drone usage and we will be sure to get back to you promptly.
             </p>
           </div>
-          <a href="mailto:oglebee2023@gmail.com&subject=Inquiry" className='email'>oglebee2023@gmail.com</a>
+          <a href="mailto:oglebee2023@gmail.com?subject=Inquiry" className='email'>oglebee2023@gmail.com</a>
           <h1>
             Terminology
           </h1>

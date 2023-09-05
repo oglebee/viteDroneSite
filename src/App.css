@@ -1,9 +1,9 @@
 :root {
   font-size: 16px;
   font-family: 'Open Sans';
-  --text-primary: #b6b6b6;
+  --text-primary: #fbfbfb;
   --text-secondary: #ececec;
-  --bg-primary: #23232e;
+  --bg-primary: #73739a;
   --bg-secondary: #141418;
   --transition-speed: 300ms;
 }
@@ -16,12 +16,12 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(217, 228, 255); /* color of the tracking area */
+  background: var(--bg-primary); /* color of the tracking area */
 }
 
 ::-webkit-scrollbar-thumb {
   width: .25rem;
-  background-color: rgb(19, 19, 108); /* color of the scroll thumb */
+  background-color: black; /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
   border: 3px solid var(--bg-primary); /* creates padding around scroll thumb */
 }
@@ -32,7 +32,7 @@ body {
   margin: 0;
   padding: 0;
   scrollbar-width: thin; /* "auto" or "thin" */
-  scrollbar-color: var(--bg-secondary) var(--bg-primary); /* scroll thumb and track */
+  scrollbar-color: var(--bg-primary) var(--bg-primary); /* scroll thumb and track */
 }
 
 main {
@@ -101,11 +101,11 @@ main {
 }
 
 .fa-primary {
-  color: #ff7eee;
+  color: #51d3d5;
 }
 
 .fa-secondary {
-  color: #df49a6;
+  color: #ca0054;
 }
 
 .fa-primary,
@@ -282,6 +282,9 @@ main {
   margin-left: 30px;
 }
 .email {
+  margin-left: 30px;
+}
+.company {
   margin-left: 30px;
 }
 
