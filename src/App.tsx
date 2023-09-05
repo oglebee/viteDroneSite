@@ -12,7 +12,7 @@ function App() {
         <a href="https://pilotinstitute.com/part-107-reasons/" target="_blank">
           <img src={reasons} className="logo" alt="React logo" />
         </a>
-        <span className='text-next-to-svg'>There are many reasons why a part 107 certifiate is essential when looking for drone partners.</span>
+        <span className='text-next-to-svg'>There are many reasons why a part 107 certificate is essential when looking for drone partners.</span>
       </div>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
