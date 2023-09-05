@@ -6,8 +6,8 @@
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 10em;
+  padding: 1em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -39,4 +39,12 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.text-next-to-svg {
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+  word-wrap: break-word;
+  padding: 1.5em;
 }

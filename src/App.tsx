@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import reasons from '/107reasons.svg'
 import './App.css'
 
 function App() {
@@ -8,25 +7,29 @@ function App() {
 
   return (
     <>
+      <h1>Oglebee Solutions</h1>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+        <a href="https://pilotinstitute.com/part-107-reasons/" target="_blank">
+          <img src={reasons} className="logo" alt="React logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <span className='text-next-to-svg'>There are many reasons why a part 107 certifiate is essential when looking for drone partners.</span>
       </div>
-      <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Welcome to Oglebee Solutions, your trusted partner in drone services. Our team is dedicated to providing high-quality drone solutions for various industries. Whether it's aerial photography, surveying, or inspections, we have you covered.
+        </p>
+        <p>
+        We are proud to announce that we are Part 107 certificated, ensuring that our operations meet the highest safety and regulatory standards.
+        </p>
+        <p>
+        Please bear with us as we continue to build and improve our website. In the meantime, feel free to contact us for any inquiries or drone-related services.
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        oglebee2023@gmail.com
       </p>
     </>
   )
