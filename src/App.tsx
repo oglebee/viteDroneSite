@@ -28,9 +28,7 @@ function App() {
         Please bear with us as we continue to build and improve our website. In the meantime, feel free to contact us for any inquiries or drone-related services.
         </p>
       </div>
-      <p className="read-the-docs">
-        oglebee2023@gmail.com
-      </p>
+      <a href="mailto:oglebee2023@gmail.com&subject=Inquiry">oglebee2023@gmail.com</a>
     </>
   )
 }
