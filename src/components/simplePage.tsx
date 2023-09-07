@@ -1,5 +1,3 @@
-import React from 'react';
-
 const SimplePage = () => {
   const imageNames = Object.keys(import.meta.glob('/catGal/fullres/*.jpg'));
   return (

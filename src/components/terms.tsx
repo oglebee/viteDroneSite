@@ -1,5 +1,3 @@
-import React from "react";
-
 const TermsSection = () => {
     return (
         <section className="terms-section">
