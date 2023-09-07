@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (          
   <nav className="navbar">
@@ -31,7 +33,7 @@ const Navbar = () => {
       </a>
     </li>
     <li className="nav-item">
-      <a href="/simplepage" className="nav-link">
+      <Link to='/simplepage' className="nav-link">
         <svg
           aria-hidden="true"
           focusable="false"
@@ -56,7 +58,7 @@ const Navbar = () => {
           </g>
         </svg>
         <span className="link-text">Cat Pics</span>
-      </a>
+      </Link>
     </li>
     <li className="nav-item">
       <a href="#" className="nav-link">
