@@ -35,7 +35,7 @@ body {
   scrollbar-color: var(--bg-primary) var(--bg-primary); /* scroll thumb and track */
 }
 
-main {
+main, .simple-main {
   margin-left: 5rem;
   padding: 1rem;
 }
@@ -162,7 +162,7 @@ main {
     justify-content: center;
   }
 
-  main {
+  main, .SimplePage {
     margin: 0;
   }
 }
