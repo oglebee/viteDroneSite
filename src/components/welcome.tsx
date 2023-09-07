@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import reasons from '/107reasons.svg'
-
 
 const WelcomeSection = () => {
     const [count, setCount] = useState(0)
