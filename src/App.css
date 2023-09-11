@@ -162,7 +162,7 @@ main, .simple-main {
     justify-content: center;
   }
 
-  main, .SimplePage {
+  main, .simple-main {
     margin: 0;
   }
 }
@@ -208,29 +208,6 @@ main, .simple-main {
   --bg-secondary: #e4e4e4;
 }
 
-.solar {
-  --text-primary: #576e75;
-  --text-secondary: #35535c;
-  --bg-primary: #fdf6e3;
-  --bg-secondary: #f5e5b8;
-}
-
-.theme-icon {
-  display: none;
-}
-
-.dark #darkIcon {
-  display: block;
-}
-
-.light #lightIcon {
-  display: block;
-}
-
-.solar #solarIcon {
-  display: block;
-}
-
 .reasons {
   height: 10em;
   padding: .4em;
@@ -273,7 +250,7 @@ main, .simple-main {
 .text-next-to-svg {
   display: inline-block;
   vertical-align: top;
-  width: 150px;
+  width: 175px;
   word-wrap: break-word;
   padding: .5em;
 }
@@ -284,8 +261,9 @@ main, .simple-main {
 .email {
   margin-left: 30px;
 }
-.company {
+.page-title {
   margin-left: 30px;
 }
 
 h2 {font-size: 20px;}
+

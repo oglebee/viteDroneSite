@@ -33,7 +33,7 @@ const Navbar = () => {
       </a>
     </li>
     <li className="nav-item">
-      <Link to='/simplepage' className="nav-link">
+      <Link to='/catpage' className="nav-link">
         <svg
           aria-hidden="true"
           focusable="false"
@@ -61,7 +61,7 @@ const Navbar = () => {
       </Link>
     </li>
     <li className="nav-item">
-      <a href="#" className="nav-link">
+      <Link to='/interestspage' className="nav-link">
         <svg
           aria-hidden="true"
           focusable="false"
@@ -86,10 +86,10 @@ const Navbar = () => {
           </g>
         </svg>
         <span className="link-text">Interests</span>
-      </a>
+      </Link>
     </li>
     <li className="nav-item">
-      <a href="#" className="nav-link">
+      <Link to='/aboutpage' className="nav-link">
         <svg
           aria-hidden="true"
           focusable="false"
@@ -109,7 +109,7 @@ const Navbar = () => {
           </g>
         </svg>
         <span className="link-text">About Us</span>
-      </a>
+      </Link>
     </li>
   </ul>
 </nav>

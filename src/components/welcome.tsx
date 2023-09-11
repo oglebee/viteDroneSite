@@ -5,12 +5,12 @@ const WelcomeSection = () => {
     const [count, setCount] = useState(0)
     return (
         <section className="welcome-section">
-            <h1 className='company'>Oglebee Solutions</h1>
+            <h1 className='page-title'>Oglebee Solutions</h1>
             <div className='reasonsLink'>
             <a href="https://pilotinstitute.com/part-107-reasons/" target="_blank">
                 <img src={reasons} className="reasons" alt="React logo" />
             </a>
-            <span className='text-next-to-svg'>There are many reasons why a part 107 certificate is essential when looking for drone partners.</span>
+            <span className='text-next-to-svg'>There are many reasons why a part 107 certificate is essential when looking for drone partners. Click the graphic to read more.</span>
             </div>
             <div className="card">
             <button onClick={() => setCount((count) => count + 1)}>
@@ -26,7 +26,7 @@ const WelcomeSection = () => {
                 Please feel free to contact us for any questions or concerns you may have about proper drone usage and we will be sure to get back to you promptly.
             </p>
             </div>
-            <a href="mailto:oglebee2023@gmail.com?subject=Inquiry" className='email'>oglebee2023@gmail.com</a>
+            <a href="mailto:info@oglebee.com?subject=Inquiry" className='email'>info@oglebee.com</a>
         </section>
 );
 };
