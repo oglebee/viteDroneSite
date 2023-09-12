@@ -192,6 +192,10 @@ main, .simple-main {
   {
     left: 0px;
   }
+
+  .reasonsLink, .email, .page-title, .card, .terms {
+    margin-left: 30px;
+  }
 }
 
 .dark {
@@ -239,10 +243,6 @@ main, .simple-main {
   }
 }
 
-.card {
-  padding: 2em;
-}
-
 .read-the-docs {
   color: #888;
 }
@@ -255,15 +255,7 @@ main, .simple-main {
   padding: .5em;
 }
 
-.reasonsLink {
-  margin-left: 30px;
-}
-.email {
-  margin-left: 30px;
-}
-.page-title {
-  margin-left: 30px;
-}
+
 
 h2 {font-size: 20px;}
 
