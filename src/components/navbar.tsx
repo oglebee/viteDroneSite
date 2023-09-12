@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (          
@@ -33,7 +33,7 @@ const Navbar = () => {
       </a>
     </li>
     <li className="nav-item">
-      <Link to='/catpage' className="nav-link">
+      <NavLink to='/catpage' className="nav-link">
         <svg
           aria-hidden="true"
           focusable="false"
@@ -58,10 +58,10 @@ const Navbar = () => {
           </g>
         </svg>
         <span className="link-text">Cat Pics</span>
-      </Link>
+      </NavLink>
     </li>
     <li className="nav-item">
-      <Link to='/interestspage' className="nav-link">
+      <NavLink to='/interestspage' className="nav-link">
         <svg
           aria-hidden="true"
           focusable="false"
@@ -86,10 +86,10 @@ const Navbar = () => {
           </g>
         </svg>
         <span className="link-text">Interests</span>
-      </Link>
+      </NavLink>
     </li>
     <li className="nav-item">
-      <Link to='/aboutpage' className="nav-link">
+      <NavLink to='/aboutpage' className="nav-link">
         <svg
           aria-hidden="true"
           focusable="false"
@@ -109,7 +109,7 @@ const Navbar = () => {
           </g>
         </svg>
         <span className="link-text">About Us</span>
-      </Link>
+      </NavLink>
     </li>
   </ul>
 </nav>

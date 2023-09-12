@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, } from 'react-router-dom';
 import Navbar from './components/navbar';
 import WelcomeSection from './components/welcome';
 import TermsSection from './components/terms';
@@ -14,7 +14,7 @@ function App() {
         <body>
           <Navbar />
           <Routes>
-            <Route path='/' element={
+            <Route exact path='/' element={
               <main>
                 <WelcomeSection />
                 <TermsSection />
