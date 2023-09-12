@@ -14,7 +14,7 @@ function App() {
         <body>
           <Navbar />
           <Routes>
-            <Route exact path='/' element={
+            <Route path='/' element={
               <main>
                 <WelcomeSection />
                 <TermsSection />
