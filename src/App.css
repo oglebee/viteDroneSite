@@ -164,6 +164,7 @@ main, .simple-main {
 
   main, .simple-main {
     margin: 0;
+    margin-bottom: 5rem;
   }
 }
 
