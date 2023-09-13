@@ -1,10 +1,10 @@
-import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import { collection, addDoc } from 'firebase/firestore';
 import app from './firebase.tsx'; // Import the Firebase configuration
 
 // Function to add a book to Firestore
 async function addBookToFirestore(bookData: { title: string; author: string; year: string }) {
   try {
-    const db = getFirestore(app);
+    const db = app;
     const booksCollection = collection(db, 'books');
     const docRef = await addDoc(booksCollection, bookData);
     console.log('Document written with ID:', docRef.id);
