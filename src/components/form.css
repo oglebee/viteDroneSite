@@ -1,18 +1,23 @@
-
+.email {
+  margin-left: 0;
+}
 
 .field {
 margin-bottom: 10px;
+display: flex;
+align-items: flex-start;
 }
 
 .field label {
 display: block;
-font-size: 12px;
-color: #777;
+font-size: 16px;
+color: rgb(65, 65, 65);
+width: 5rem;
 }
 
 .field input {
 display: block;
-min-width: 250px;
+min-width: 350px;
 line-height: 1.5;
 font-size: 14px;
 }
@@ -46,3 +51,6 @@ textarea {
     height: 100px;
 }
 
+.button-container {
+  padding-left: 5rem;
+}

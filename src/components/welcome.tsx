@@ -1,5 +1,6 @@
 import { useState } from "react";
 import reasons from '/107reasons.svg'
+import './welcome.css';
 
 const WelcomeSection = () => {
     const [count, setCount] = useState(0)

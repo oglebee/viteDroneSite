@@ -108,7 +108,7 @@ const Navbar = () => {
             ></path>
           </g>
         </svg>
-        <span className="link-text">About Us</span>
+        <span className="link-text">Contact Us</span>
       </NavLink>
     </li>
   </ul>

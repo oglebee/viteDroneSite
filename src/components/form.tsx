@@ -31,14 +31,27 @@ export const ContactUs = () => {
           Thank you for your submission. We look forward to working with you.
         </div>
       ) : (
-       <form className='form' ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="from_name" />
-        <label>Email</label>
-        <input type="email" name="reply_to" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
+        <form className='form' ref={form} onSubmit={sendEmail}>
+          <div className='field'>
+            <label htmlFor='to'>To:</label>
+            <a id='to' href="mailto:info@oglebee.com?subject=Inquiry Oglebee Solutions services">info@oglebee.com</a>
+            <br />
+          </div>
+          <div className='field'>
+            <label htmlFor='reply_to'>From:</label>
+            <input type="email" name="reply_to" placeholder='your-email@here'/>
+          </div>
+          <div className='field'>
+            <label htmlFor='subject'>Subject:</label>
+            <input type="text" name='subject' />
+          </div>
+          <div className='field'>
+            <label>Message:</label>
+            <textarea name="message" />
+          </div>
+          <div className='button-container'>
+            <input type="submit" value="Send" />
+          </div>
         </form> 
       )}
     </div>

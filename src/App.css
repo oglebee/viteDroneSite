@@ -151,7 +151,8 @@ main, .simple-main {
   }
 
   .logo {
-    display: none;
+    background-color: var(--bg-primary);
+    margin-bottom: 0;
   }
 
   .navbar-nav {
@@ -164,7 +165,11 @@ main, .simple-main {
 
   main, .simple-main {
     margin: 0;
-    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  ::-webkit-scrollbar, ::-webkit-scrollbar-track {
+    width: 0; /* width of the entire scrollbar */
   }
 }
 
@@ -194,7 +199,7 @@ main, .simple-main {
     left: 0px;
   }
 
-  .reasonsLink, .email, .page-title, .card, .terms {
+  .reasonsLink, .page-title, .card, .terms {
     margin-left: 30px;
   }
 }
