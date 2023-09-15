@@ -1,0 +1,29 @@
+.curvy-main {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    background-color: rgb(87, 63, 113);
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+}
+
+.blue {
+    background: blue;
+}
+
+.red {
+    background: red;
+}
+
+.pink {
+    background: pink;
+}
+
+.dark {
+    background: #0f0f10;
+}

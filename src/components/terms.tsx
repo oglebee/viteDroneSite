@@ -4,7 +4,7 @@ const TermsSection = () => {
             <h1 className="terms">
             Terminology
             </h1>
-                <p className='terms'>
+                <p>
                   <h2>UAS (Unmanned Aircraft System)</h2>
                   Unmanned aircraft, such as drones, controlled by an operator on the ground. The Federal Aviation Administration (FAA) uses the term UAS to reflect the fact that these systems also includes other elements aside from the actual air vehicles.
                   

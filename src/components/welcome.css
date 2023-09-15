@@ -1,5 +1,70 @@
+:root {
+    font-family: 'Open Sans';
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 400px;
+
+}
+.welcome-section {
+    display: flex;
+    padding-left: 5rem;
+    padding-top: 0;
+    align-items: flex-start;
+    width: 90%;
+    color: black;
+    background-color: white;
+}
+
+.terms-section {
+    display: flex;
+    align-items: flex-start;
+}
+
+.reasons {
+    height: 10em;
+    padding: .4em;
+    will-change: filter;
+    transition: filter 300ms;
+    border: 10px solid hwb(211 30% 0%);
+    border-radius: 10px;
+}
+.reasons:hover {
+    filter: drop-shadow(0 0 2em rgb(210, 54, 158));
+    border: 12px solid rgb(210, 54, 158);
+}
+.reasons.react:hover {
+    filter: drop-shadow(0 0 2em #ffc5f2aa);
+}
+
+.text-next-to-svg {
+    display: inline-block;
+    vertical-align: top;
+    width: 175px;
+    word-wrap: break-word;
+    padding: .5em;
+}
+
+
 @media only screen and (min-width: 600px) {
     .email {
+        padding-left: 30px;
+    }
+    .reasonsLink, .page-title, .card, .terms-section {
         margin-left: 30px;
+    }
+
+    .terms {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .welcome-section {
+        padding-left: 1rem;
     }
 }

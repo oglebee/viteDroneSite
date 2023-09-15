@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import './navbar.css';
 
 const Navbar = () => {
   return (          
@@ -86,6 +87,28 @@ const Navbar = () => {
           </g>
         </svg>
         <span className="link-text">Interests</span>
+      </NavLink>
+    </li>
+    <li className="nav-item">
+      <NavLink to='/curvypage' className="nav-link">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fad"
+          data-icon="space-shuttle"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          className="svg-inline--curvy"
+        >
+        <g className="fa-group">
+          <rect id="Rectangle 1" width="512" height="512" fill="currentColor" className="fa-primary"/>
+        </g>
+        <g className="fa-group">
+          <path id="Vector 1" d="M280 126C211 117 173 229 0 157V371C15 335.667 54 268.6 90 283C135 301 130 479 196 461C262 443 306 352 356 371C406 390 408 456 443 451C471 447 500.667 430.667 512 423V175C506 183 482.2 202.4 435 216C376 233 349 135 280 126Z" fill="currentColor" stroke="black" className="fa-secondary"/>
+        </g>
+        </svg>
+        <span className="link-text">Curvy</span>
       </NavLink>
     </li>
     <li className="nav-item">

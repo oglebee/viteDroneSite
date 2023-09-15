@@ -17,7 +17,7 @@ width: 5rem;
 
 .field input {
 display: block;
-min-width: 350px;
+min-width: 60%;
 line-height: 1.5;
 font-size: 14px;
 }
@@ -52,5 +52,6 @@ textarea {
 }
 
 .button-container {
+  padding-bottom: 1rem;
   padding-left: 5rem;
 }
