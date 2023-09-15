@@ -26,7 +26,7 @@ const WelcomeSection = () => {
                     We are proud to announce that we are Part 107 certificated, ensuring that our operations meet the highest safety and regulatory standards.
                 </p>
                 <p>
-                    Please feel free to contact us for any questions or concerns you may have about proper drone usage and we will be sure to get back to you promptly.
+                    Please feel free to contact us for any questions or concerns you may have and we will be sure to get back to you promptly.
                 </p>
             </div>
             <a href="mailto:info@oglebee.com?subject=Inquiry" className='email'>info@oglebee.com</a>
