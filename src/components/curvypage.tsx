@@ -1,4 +1,5 @@
 import './curvypage.css';
+import MyComponent from './comp.tsx';
 
 const CurvyPage = () => {
   return (
@@ -6,6 +7,7 @@ const CurvyPage = () => {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/kute.js@2.0.0/kute.min.js"></script> 
             <section className='blue'>
                 <h1>Nice Curves</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea repellendus tenetur adipisci fuga. Placeat aperiam reiciendis a numquam animi assumenda repellendus ex doloremque. Neque commodi, unde magni autem pariatur rerum?</p>
@@ -29,10 +31,15 @@ const CurvyPage = () => {
                 </div>
             </section>
             <div className="spacer layer1" /> 
-            <section>
+            
+            <div className="spacer layer2 flip" />
+            <section className='pink'>
                 <h1>Nice Curves</h1>
                 <p>Debitis, odio eaque nobis eveniet culpa dolorem commodi doloremque voluptatem quis molestias nulla ipsa. Eos nulla, explicabo illum quo asperiores, ipsa a cupiditate consequuntur ab aut molestias. Nihil, labore at.</p>
+                <MyComponent />
             </section>
+            <div className="spacer layer2" />
+
             <section>
                 <h1>Nice Curves</h1>
                 <p>Placeat veniam soluta nihil iure libero alias! Laboriosam, facilis nobis accusantium, harum unde quibusdam, nesciunt voluptates cum aliquam doloremque necessitatibus autem quas repellat similique temporibus commodi velit hic tenetur. Esse!</p>

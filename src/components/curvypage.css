@@ -28,7 +28,7 @@ p, h1 {
 }
 
 .pink {
-    background: pink;
+    background: #ff00a1;
 }
 
 .dark {
@@ -136,4 +136,12 @@ p, h1 {
 
 .layer1 {
     background-image: url('/layerwaves.svg');
+}
+
+.layer2 {
+    background-image: url('/layerpink2.svg');
+}
+
+.flip {
+    transform: rotate(180deg);
 }
