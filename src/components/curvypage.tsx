@@ -1,5 +1,5 @@
 import './curvypage.css';
-import MyComponent from './comp.tsx';
+import AnimatedBlob from './comp.tsx';
 
 const CurvyPage = () => {
   return (
@@ -36,7 +36,7 @@ const CurvyPage = () => {
             <section className='pink'>
                 <h1>Nice Curves</h1>
                 <p>Debitis, odio eaque nobis eveniet culpa dolorem commodi doloremque voluptatem quis molestias nulla ipsa. Eos nulla, explicabo illum quo asperiores, ipsa a cupiditate consequuntur ab aut molestias. Nihil, labore at.</p>
-                <MyComponent />
+                <AnimatedBlob />
             </section>
             <div className="spacer layer2" />
 

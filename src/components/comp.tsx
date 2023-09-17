@@ -1,25 +1,20 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import KUTE from 'kute.js';
 import './comp.css';
 
-const MyComponent = () => {
-    const myElement = useRef(null);
-    const secondGStyle: React.CSSProperties = {
-        visibility: 'hidden',
+const AnimatedBlob = () => {
+  const secondGStyle: React.CSSProperties = {
+      visibility: 'hidden',
+      };
+  useEffect(() => {
+    const tween = KUTE.fromTo('#blob1', { path: '#blob1' }, { path: '#blob2' }, { repeat: 999, duration: 3000, yoyo: true });
+    tween.start();
+    
+    return () => {
+      // Cleanup when the component unmounts
+      tween.stop();
     };
-
-    useEffect(() => {
-        if (myElement.current) {
-            const tween = KUTE.fromTo(
-                '#blob1',
-                { path: '#blob1' },
-                { path: '#blob2' },
-                { repeat: 999, duration: 3000, yoyo: true }
-            );
-
-            tween.start();
-        }
-    }, []);
+  }, []);
 
     return (
         <svg
@@ -46,4 +41,4 @@ const MyComponent = () => {
     );
 };
 
-export default MyComponent;
+export default AnimatedBlob;
