@@ -14,13 +14,29 @@ section {
     min-height: 400px;
 }
 
-p, h1 {
+.curvy-main p {
     z-index: 5;
-    padding-left: 1rem;
+    margin: 1rem;
 }
 
-.blue {
-    background: blue;
+h1 {
+    z-index: 5;
+}
+
+svg {
+    shape-rendering: crispEdges;
+    line-height: 0;
+    display: block;
+}
+
+section, div {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+.purple {
+    background: rgb(150, 13, 209);
 }
 
 .red {
@@ -66,7 +82,7 @@ p, h1 {
     border-radius: 100% 50%;
     width: 55%;
     height: 100%;
-    background-color: blue;
+    background-color: rgb(150, 13, 209);
     transform: translate(-4%, 40%);
     overflow-x: hidden;
 
@@ -144,4 +160,26 @@ p, h1 {
 
 .flip {
     transform: rotate(180deg);
+    margin-top: -5px;
+}
+
+.blob-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    overflow: visible;
+}
+
+.blob-container .blob-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.blob-container .blob {
+    position: absolute;
+    z-index: 0;
+    overflow: visible;
 }

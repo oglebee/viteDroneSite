@@ -12,12 +12,9 @@ section {
 }
 .welcome-section {
     display: flex;
-    padding-left: 5rem;
     padding-top: 0;
     align-items: flex-start;
     width: 90%;
-    color: black;
-    background-color: white;
 }
 
 .terms-section {
@@ -27,7 +24,6 @@ section {
 
 .reasons {
     height: 10em;
-    padding: .4em;
     will-change: filter;
     transition: filter 300ms;
     border: 10px solid hwb(211 30% 0%);
@@ -51,15 +47,11 @@ section {
 
 
 @media only screen and (min-width: 600px) {
-    .email {
-        padding-left: 30px;
-    }
-    .reasonsLink, .page-title, .card, .terms-section {
-        margin-left: 30px;
-    }
-
     .terms {
         text-align: left;
+    }
+    .welcome-section {
+        padding-left: 7rem;
     }
 }
 
@@ -68,3 +60,4 @@ section {
         padding-left: 1rem;
     }
 }
+

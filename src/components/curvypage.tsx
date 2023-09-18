@@ -1,5 +1,7 @@
 import './curvypage.css';
 import AnimatedBlob from './comp.tsx';
+import { NavLink } from "react-router-dom";
+
 
 const CurvyPage = () => {
   return (
@@ -8,35 +10,51 @@ const CurvyPage = () => {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet" />
         <script src="https://cdn.jsdelivr.net/npm/kute.js@2.0.0/kute.min.js"></script> 
-            <section className='blue'>
+            <section className='purple'>
                 <h1>Nice Curves</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea repellendus tenetur adipisci fuga. Placeat aperiam reiciendis a numquam animi assumenda repellendus ex doloremque. Neque commodi, unde magni autem pariatur rerum?</p>
+                <p>Welcome to the nice curves page. This page is being built out to demonstrate Oglebee Solutions' website building abilities. Please feel free to check out our scroll portfolio to see all the interesting features that can be implemented into your website. <NavLink to='/catpage'>Contact Us</NavLink> us for details.</p>
                 <div className='curve'></div>
             </section>
             <section className='bubble'>
-                <h1>Nice Curves</h1>
-                <p>Commodi modi quod quis distinctio? Ex unde atque voluptas, iusto nam nobis debitis, corrupti sapiente hic necessitatibus laborum obcaecati dolor earum? Nobis, sed omnis! Nobis hic eum debitis architecto iure.</p>
+                <h1>Border Radius</h1>
+                <p>These first designs are done with by modifying the border radius. By entering two percentage values for the radius you are giving it an X and Y transformation resulting in an ellipse. By making two surfboard shape ellipses, aligning them on a section border and coloring each one to match the above and below section's color, you can achieve this rough sorta-sinal wave. The bubble below is just a simple top-border radius change.</p>
             </section>
             <section className='orange'>
-                <h1>Nice Curves</h1>
-                <p>Eligendi, ex repudiandae, esse porro cum mollitia error voluptas autem laborum soluta dolorum iste facere dolor qui laudantium distinctio similique! Quasi modi quidem veniam nesciunt, tenetur assumenda consequatur facilis fugiat?</p>
+                <h1>Wave SVG</h1>
+                <p>That first wave is neat but it is a bit ugly and difficult to change around as there are a lot of factors involved with the positioning. 
+                    CSS is already fun enough without calc/trig.  
+                    You will also notice that it scales a bit weird to small screens. This is with me tweaking it for the smaller sizes.
+                    The smooth wave below is an svg created using <a href="https://www.shapedivider.app/">Shapedivider</a>. 
+                    This app gives a graphical way to change the picture and formatting help for multiple screen sizes. This looks nicer.
+                </p>
             </section>
             <section className='red'>
-                <h1>Nice Curves</h1>
-                <p>Nam tempora rerum dolore corrupti enim optio autem. Laborum reprehenderit quis est omnis. Animi consequuntur ipsam voluptates perferendis mollitia nulla? Qui inventore voluptate nulla animi? Ab aut sed vel doloribus!</p>
+                <h1>Fancy Waves</h1>
+                <p>This fancier wave below is created using <a href="https://app.haikei.app/">haikei.</a> 
+                    This app has all sorts of fun tools to make interesting graphics. 
+                    Lining up the outer colors provides a smooth transition between sections on a website.
+                </p>
                 <div className="wave">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
                     </svg>
                 </div>
             </section>
-            <div className="spacer layer1" /> 
-            
+            <div className="spacer layer1" />  
             <div className="spacer layer2 flip" />
-            <section className='pink'>
-                <h1>Nice Curves</h1>
-                <p>Debitis, odio eaque nobis eveniet culpa dolorem commodi doloremque voluptatem quis molestias nulla ipsa. Eos nulla, explicabo illum quo asperiores, ipsa a cupiditate consequuntur ab aut molestias. Nihil, labore at.</p>
-                <AnimatedBlob />
+            <section className='pink blob-container'>
+                <div className='blob-content'>
+                    <h1>Blob</h1>
+                    <p>Animations are a great way to make a page more interesting. 
+                        This simple blob animation was also made with <a href="https://app.haikei.app/">haikei.</a>. 
+                        Many types of transformations can be achieved with this. 
+                        Buttons or sliders changing shape. Animating movement for actions like download or page transitions.
+                    </p>
+                </div>
+                <div className='blob'>
+                    <AnimatedBlob />
+                </div>
+                
             </section>
             <div className="spacer layer2" />
 

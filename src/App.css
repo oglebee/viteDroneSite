@@ -1,7 +1,8 @@
 :root {
   font-size: 16px;
   font-family: 'Open Sans';
-  --text-primary: #fbfbfb;
+  color-scheme: light dark;
+  --text-primary: #ffffff;
   --text-secondary: #ececec;
   --bg-primary: #73739a;
   --bg-secondary: #141418;
@@ -45,8 +46,8 @@
 }
 
 .dark {
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
+  --text-primary: #ffffff;
+  --text-secondary: #ffffff;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
 }

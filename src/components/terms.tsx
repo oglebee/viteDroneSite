@@ -1,7 +1,7 @@
 const TermsSection = () => {
     return (
         <section className="terms-section">
-            <h1 className="terms">
+            <h1 className="page-title">
             Terminology
             </h1>
                 <p>

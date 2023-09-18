@@ -32,6 +32,7 @@ const WelcomeSection = () => {
             <a href="mailto:info@oglebee.com?subject=Inquiry" className='email'>info@oglebee.com</a>
             <TermsSection />
         </section>
+        
         </>
 );
 };
