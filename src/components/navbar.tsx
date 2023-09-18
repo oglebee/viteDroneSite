@@ -1,7 +1,24 @@
 import { NavLink } from "react-router-dom";
 import './navbar.css';
+import { useEffect } from "react";
 
 const Navbar = () => {
+  useEffect(() => {
+    const handleResize = () => {
+      const navbar = document.querySelector(".navbar");
+      if (navbar instanceof HTMLElement) {
+        navbar.style.height = window.innerHeight + 'px';
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Call the function to set initial size
+    handleResize();
+
+    // Cleanup function to remove the event listener
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (          
   <nav className="navbar">
   <ul className="navbar-nav">

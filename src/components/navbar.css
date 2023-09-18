@@ -107,7 +107,7 @@
       width: 100vw;
       height: 5rem;
       overflow: hidden;
-      position: fixed ;
+      position: fixed;
     }
   
     .logo {
@@ -132,8 +132,8 @@
   @media only screen and (min-width: 600px) {
     .navbar {
       top: 0;
+      bottom: 0;
       width: 5rem;
-      height: 100vh;
     }
   
     .navbar:hover {

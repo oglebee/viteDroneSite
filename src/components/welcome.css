@@ -14,7 +14,8 @@ section {
     display: flex;
     padding-top: 0;
     align-items: flex-start;
-    width: 90%;
+    width: 85%;
+    overflow-x: hidden;
 }
 
 .terms-section {
@@ -45,6 +46,11 @@ section {
     padding: .5em;
 }
 
+p {
+    word-wrap: break-word; /* Ensure long words break onto a new line */
+    white-space: normal; /* Allow text to wrap onto a new line */
+    overflow-wrap: break-word; /* Handle word breaks properly */
+  }
 
 @media only screen and (min-width: 600px) {
     .terms {
