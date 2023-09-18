@@ -5,9 +5,11 @@ import { useEffect } from "react";
 const Navbar = () => {
   useEffect(() => {
     const handleResize = () => {
-      const navbar = document.querySelector(".navbar");
-      if (navbar instanceof HTMLElement) {
-        navbar.style.height = window.innerHeight + 'px';
+      if (window.innerWidth > 768) {
+        const navbar = document.querySelector(".navbar");
+        if (navbar instanceof HTMLElement) {
+          navbar.style.height = window.innerHeight + 'px';
+        }
       }
     };
 
