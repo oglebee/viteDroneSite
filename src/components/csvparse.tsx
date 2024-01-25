@@ -2,7 +2,12 @@ import { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 import "./csvparse.css" ;
 
-function fetchDataFromCSV(csvPath: RequestInfo | URL) {
+interface DataEntry {
+  BBL: string;
+  // Define other properties based on your CSV structure
+}
+
+function fetchDataFromCSV(csvPath: RequestInfo | URL): Promise<DataEntry[]> {
   return fetch(csvPath)
     .then(response => {
       if (!response.ok) {
@@ -10,17 +15,17 @@ function fetchDataFromCSV(csvPath: RequestInfo | URL) {
       }
       return response.text();
     })
-    .then(text => Papa.parse(text, { header: true }).data);
+    .then(text => Papa.parse<DataEntry>(text, { header: true }).data);
 }
 
 function BBLGrab() {
-  const [dataLL84, setDataLL84] = useState([]);
-  const [dataLL87, setDataLL87] = useState([]);
-  const [dataLL97, setDataLL97] = useState([]);
-  const [inputBBLs, setInputBBLs] = useState([]);
-  const [selectedBBLData, setSelectedBBLData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [dataLL84, setDataLL84] = useState<DataEntry[]>([]);
+  const [dataLL87, setDataLL87] = useState<DataEntry[]>([]);
+  const [dataLL97, setDataLL97] = useState<DataEntry[]>([]);
+  const [inputBBLs, setInputBBLs] = useState<string[]>([]);
+  const [selectedBBLData, setSelectedBBLData] = useState<DataEntry[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     setIsLoading(true);
@@ -41,7 +46,7 @@ function BBLGrab() {
       });
   }, []);
 
-  const getDataForBBL = (bbl: any) => {
+  const getDataForBBL = (bbl: string): DataEntry => {
     const ll84Entry = dataLL84.find(entry => entry.BBL === bbl) || {};
     const ll87Entry = dataLL87.find(entry => entry.BBL === bbl) || {};
     const ll97Entry = dataLL97.find(entry => entry.BBL === bbl) || {};
@@ -49,7 +54,7 @@ function BBLGrab() {
     return { BBL: bbl, ...ll84Entry, ...ll87Entry, ...ll97Entry };
   };
 
-  const handleBBLInputChange = (event: { target: { value: any; }; }) => {
+  const handleBBLInputChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     const value = event.target.value;
     const bbls = value.split(/[\n,]+/).map((bbl: string) => bbl.trim()).filter(Boolean);
     setInputBBLs(bbls);
