@@ -30,9 +30,9 @@ function BBLGrab() {
   useEffect(() => {
     setIsLoading(true);
     Promise.all([
-      fetchDataFromCSV('./src/data/LL84.csv'),
-      fetchDataFromCSV('./src/data/LL87.csv'),
-      fetchDataFromCSV('./src/data/LL97.csv')
+      fetchDataFromCSV('/data/LL84.csv'),
+      fetchDataFromCSV('/data/LL87.csv'),
+      fetchDataFromCSV('/data/LL97.csv')
     ])
       .then(([data84, data87, data97]) => {
         setDataLL84(data84);
