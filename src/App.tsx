@@ -6,7 +6,7 @@ import CatPage from './components/catpage.tsx';
 import InterestsPage from './components/interestspage.tsx';
 import AboutPage from './components/aboutpage.tsx';
 import CurvyPage from './components/curvypage.tsx';
-import BBLGrab from './components/csvparse.tsx';
+import CSVparse from './components/csvparse.tsx';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
             <Route path='/interestspage' element={<InterestsPage/>}/>
             <Route path='/curvypage' element={<CurvyPage />}/>
             <Route path='/aboutpage' element={<AboutPage/>}/>
-            <Route path='/bblpage' element={<BBLGrab/>}/>
+            <Route path='/bblpage' element={<CSVparse/>}/>
 
           </Routes>
       </Router>

@@ -52,6 +52,11 @@ p {
     overflow-wrap: break-word; /* Handle word breaks properly */
   }
 
+dt {
+    font-weight: bolder;
+    margin-top: 3rem;
+}
+
 @media only screen and (min-width: 600px) {
     .terms {
         text-align: left;
