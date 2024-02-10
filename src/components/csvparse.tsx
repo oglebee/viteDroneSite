@@ -120,7 +120,7 @@ function CSVparse() {
           onChange={handleBBLInputChange}
         />
         <p>Pulls data from LL84, LL87, and LL97 documents issued once per year (paste multiple BBLs)</p>
-        <button onClick={handleRetrieveData}>Fetch Data</button>
+        <button className='butt' onClick={handleRetrieveData}>Fetch Data</button>
         
       </div>
 
