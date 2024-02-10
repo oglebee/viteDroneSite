@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 import "./csvparse.css" ;
+import APIViolation from './violations';
 
 interface DataEntry {
   BBL: string;
@@ -113,7 +114,8 @@ function CSVparse() {
           value={inputBBLs.join('\n')}
           onChange={handleBBLInputChange}
         />
-        <button onClick={handleRetrieveData}>Retrieve Data</button>
+        <button onClick={handleRetrieveData}>Fetch Data</button>
+        <p>Pulls data from LL84, LL87, and LL97 documents issued once per year</p>
       </div>
 
       <div>
@@ -126,6 +128,7 @@ function CSVparse() {
           <p>No data found for these BBLs.</p>
         )}
       </div>
+      <div> < APIViolation /> </div>
     </div>
   );
 }
