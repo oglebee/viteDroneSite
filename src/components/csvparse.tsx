@@ -126,16 +126,14 @@ function CSVparse() {
 
       <div>
         <h2>Selected BBL Data:</h2>
-        {selectedBBLData.length > 0 ? (
+        {selectedBBLData.length > 0 && (
           selectedBBLData.map((data, index) => (
             <pre key={index}>{JSON.stringify(data, null, 2)}</pre>
           ))
-        ) : (
-          <p>No data found for these BBLs.</p>
         )}
       </div>
       <div> < APIViolation /> </div>
-    </div>
+      </div>
   );
 }
 

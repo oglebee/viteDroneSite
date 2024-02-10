@@ -25,19 +25,28 @@ interface ApiResponse {
 const APIViolation: React.FC = () => {
     const [ data, setData] = useState<ApiResponse[]>([]);
     const [inputValue, setInputValue] = useState<string>('');
+    const [message, setMessage] = useState("");
 
     const fetchData = async () => {
         try {
             const boro = inputValue.substring(0, 1);
-            //const block = inputValue.substring(1, 6);
-            //const lot = inputValue.substring(6, 10);
+            const block = inputValue.substring(1, 6);
+            const lot = inputValue.substring(6, 10);
             const appToken = import.meta.env.VITE_APP_ENERGY_DATA;
     
-            const response = await axios.get(`https://data.cityofnewyork.us/resource/3h2n-5cm9.json?$where=boro='${boro}'`, {
+            const response = await axios.get(`https://data.cityofnewyork.us/resource/3h2n-5cm9.json?$where=boro='${boro}'%20AND%20block='${block}'%20AND%20lot='${lot}'`, {
                 headers: {
                     'X-App-Token': appToken
                 }
             });
+
+            if (response.data.length === 0) {
+                setMessage("No violations found for that BBL");
+            } else {
+                setData(response.data);
+                setMessage(""); // Clear the message when data is found
+            }
+
             setData(response.data);
         } catch (error) {
             console.error('Error fetching data:', error);
@@ -68,9 +77,11 @@ const APIViolation: React.FC = () => {
                     <p>Category: {item.violation_category}</p>
                     <p>Address: {item.house_number} {item.street}</p>
                     <p>BIN: {item.bin}</p>
+                    <p>Lot: {item.lot}</p>
                     {/* Add more fields as needed */}
                 </div>
             ))}
+            {message && <p>{message}</p>}
         </div>
     );
 };
