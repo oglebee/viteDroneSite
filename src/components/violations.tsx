@@ -67,6 +67,7 @@ const APIViolation: React.FC = () => {
                     <p>Type: {item.violation_type}</p>
                     <p>Category: {item.violation_category}</p>
                     <p>Address: {item.house_number} {item.street}</p>
+                    <p>BIN: {item.bin}</p>
                     {/* Add more fields as needed */}
                 </div>
             ))}
