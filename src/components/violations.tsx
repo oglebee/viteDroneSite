@@ -58,6 +58,7 @@ const APIViolation: React.FC = () => {
         <div>
             <form onSubmit={handleSubmit}>
                 <input type="text" value={inputValue} onChange={handleInputChange} />
+                <p>Enter single BBL to see all violations from NYC DOB Violations DB (wait for loading)</p>
                 <button type="submit">Fetch Data</button>
             </form>
             {data.map((item, index) => (

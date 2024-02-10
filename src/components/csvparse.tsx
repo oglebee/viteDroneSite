@@ -8,6 +8,11 @@ interface DataEntry {
   // Define other properties based on your CSV structure
 }
 
+interface DataResult {
+  result: DataEntry;
+  missing: string[];
+}
+
 function fetchDataFromCSV(csvPath: RequestInfo | URL): Promise<DataEntry[]> {
   return fetch(csvPath)
     .then(response => {
@@ -24,7 +29,7 @@ function CSVparse() {
   const [dataLL87, setDataLL87] = useState<DataEntry[]>([]);
   const [dataLL97, setDataLL97] = useState<DataEntry[]>([]);
   const [inputBBLs, setInputBBLs] = useState<string[]>([]);
-  const [selectedBBLData, setSelectedBBLData] = useState<DataEntry[]>([]);
+  const [selectedBBLData, setSelectedBBLData] = useState<DataResult[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -50,7 +55,7 @@ function CSVparse() {
       });
   }, []);
 
-  const getDataForBBL = (bbl: string): DataEntry => {
+  const getDataForBBL = (bbl: string): DataResult => {
     // Initialize an empty result object
     let result = { BBL: bbl };
   
@@ -114,8 +119,9 @@ function CSVparse() {
           value={inputBBLs.join('\n')}
           onChange={handleBBLInputChange}
         />
+        <p>Pulls data from LL84, LL87, and LL97 documents issued once per year (paste multiple BBLs)</p>
         <button onClick={handleRetrieveData}>Fetch Data</button>
-        <p>Pulls data from LL84, LL87, and LL97 documents issued once per year</p>
+        
       </div>
 
       <div>
